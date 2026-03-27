@@ -26,7 +26,7 @@ rustFrontendService:
     limits:
       cpu: 500m
     requests:
-      cpu: 500m
+      cpu: 200m
 
 queryService:
   env:
@@ -37,7 +37,7 @@ queryService:
     limits:
       cpu: 500m
     requests:
-      cpu: 500m
+      cpu: 200m
 
 compactionService:
   env:
@@ -48,7 +48,7 @@ compactionService:
     limits:
       cpu: 500m
     requests:
-      cpu: 500m
+      cpu: 200m
 
 rustLogService:
   replicaCount: 1
@@ -56,7 +56,7 @@ rustLogService:
     limits:
       cpu: 500m
     requests:
-      cpu: 500m
+      cpu: 200m
 
 garbageCollector:
   jemallocConfig: "prof:true,prof_active:true,lg_prof_sample:19"
